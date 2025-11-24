@@ -6,7 +6,12 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = \
+	hvsync_gen.v \
+	scale_rom.v \
+	tria.v \
+	tt_um_kbeckmann_flame.v \
+	voice.v \
 
 ifneq ($(GATES),yes)
 
